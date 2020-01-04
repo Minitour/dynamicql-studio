@@ -1,6 +1,5 @@
-package ui;
+package io.nbrs.ui;
 
-import com.sun.istack.internal.NotNull;
 import javafx.scene.Node;
 import javafx.scene.control.ListCell;
 
@@ -20,7 +19,7 @@ public abstract class UIListViewCell<D,N extends Node> extends ListCell<D> {
      * @param item The object containing the data. passed from the ListView.
      * @return The graphic you wish to display.
      */
-    public abstract N load(@NotNull D item);
+    public abstract N load(D item);
 
     @Override
     protected void updateItem(D item, boolean empty) {

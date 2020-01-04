@@ -1,4 +1,4 @@
-package ui;
+package io.nbrs.ui;
 
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;

@@ -1,6 +1,9 @@
 package io.nbrs.dynamicql.controller;
 
 import io.nbrs.dynamicql.model.QueryParameter;
+import io.nbrs.ui.UIListViewCell;
+import io.nbrs.ui.UIView;
+import io.nbrs.ui.UIViewController;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.SimpleStringProperty;
@@ -26,9 +29,6 @@ import org.fxmisc.richtext.LineNumberFactory;
 import org.fxmisc.richtext.model.StyleSpans;
 import org.fxmisc.richtext.model.StyleSpansBuilder;
 import org.reactfx.Subscription;
-import ui.UIListViewCell;
-import ui.UIView;
-import ui.UIViewController;
 
 import java.time.Duration;
 import java.util.*;
@@ -57,7 +57,7 @@ public class MainViewController extends UIViewController {
     private List<QueryParameter> parameters = new ArrayList<>();
 
     public MainViewController() {
-        super("/io/nbrs/dynamicql/view/xml/controller_master.fxml");
+        super("/view/xml/controller_master.fxml");
     }
 
     @Override

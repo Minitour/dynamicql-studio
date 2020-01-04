@@ -16,7 +16,7 @@ public class AppDelegate extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.getIcons().add(new Image(AppDelegate.class.getResourceAsStream("/resources/logo.png")));
+        primaryStage.getIcons().add(new Image(AppDelegate.class.getResourceAsStream("/logo.png")));
 
         primaryStage.setTitle("DynamicQL Studio");
         primaryStage.setScene(new Scene(controller.view));
@@ -25,5 +25,9 @@ public class AppDelegate extends Application {
             Platform.exit();
             System.exit(0);
         });
+    }
+
+    public static void main(String... args) {
+        Application.launch(args);
     }
 }

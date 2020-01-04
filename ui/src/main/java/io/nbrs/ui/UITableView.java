@@ -1,7 +1,5 @@
-package ui;
+package io.nbrs.ui;
 
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -52,7 +50,7 @@ abstract public class UITableView<T> extends UIView {
     private Callback<TableColumn.CellDataFeatures<T,String>, ObservableValue<T>> cellDataFactories[];
 
     public UITableView() {
-        super("/ui/res/xml/tableview.fxml");
+        super("/io/nbrs/ui/res/xml/tableview.fxml");
     }
 
     @Override
@@ -100,15 +98,13 @@ abstract public class UITableView<T> extends UIView {
 
     @Override
     final public String resource() {
-        return "/ui/res/xml/tableview.fxml";
+        return "/xml/tableview.fxml";
     }
 
     public abstract int numberOfColumns();
 
-    @NotNull
     public abstract Collection<? extends T> dataSource();
 
-    @Nullable
     public abstract String bundleIdForIndex(int index);
 
     /**

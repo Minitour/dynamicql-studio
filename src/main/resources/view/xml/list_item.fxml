@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<fx:root stylesheets="@../../../../../ui/res/css/styles.css,@../css/style.css" type="javafx.scene.layout.StackPane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root stylesheets="@../../ui/res/css/styles.css,@../css/style.css" type="javafx.scene.layout.StackPane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
 
     <Pane fx:id="parent" styleClass="container">
         <HBox fx:id="vbox" prefWidth="${parent.width}" spacing="16" alignment="CENTER_LEFT">

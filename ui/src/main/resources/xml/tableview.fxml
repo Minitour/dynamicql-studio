@@ -3,7 +3,6 @@
 
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
 <fx:root stylesheets="@../css/styles.css" type="javafx.scene.layout.StackPane" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
     <!--<padding><Insets top="8" left="8" right="8" bottom="8"/></padding>-->
     <AnchorPane fx:id="pane">

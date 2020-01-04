@@ -1,4 +1,4 @@
-package ui;
+package io.nbrs.ui;
 
 import javafx.beans.NamedArg;
 import javafx.fxml.FXML;
