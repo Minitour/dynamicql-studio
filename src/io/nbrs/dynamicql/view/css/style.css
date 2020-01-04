@@ -1,0 +1,43 @@
+.navigation-drawer {
+    -fx-border-width: 0;
+    -fx-background-color: white;
+}
+
+.navigation-drawer .scroll-bar:horizontal .track,
+.navigation-drawer .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+.navigation-drawer .scroll-bar:horizontal .increment-button ,
+.navigation-drawer .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+}
+
+.navigation-drawer .scroll-bar:vertical .increment-button ,
+.navigation-drawer .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+}
+.navigation-drawer  .scroll-bar .increment-arrow,
+.navigation-drawer  .scroll-bar .decrement-arrow{
+    -fx-shape:" ";
+    -fx-padding:0;
+}
+
+.navigation-drawer .scroll-bar:horizontal .thumb,
+.navigation-drawer .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.row-item {
+    -fx-font: 16 "Helvetica";
+    -fx-text-fill : #212121;
+}

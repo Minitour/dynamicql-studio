@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<fx:root stylesheets="@../css/styles.css" type="javafx.scene.layout.StackPane" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox>
+        <padding>
+            <Insets bottom="8" left="8" right="8" top="8" />
+        </padding>
+        <HBox>
+            <Label fx:id="titleLabel" text="Title Label" VBox.vgrow="ALWAYS" styleClass="title-dialog">
+                <padding>
+                    <Insets bottom="8" left="8" right="8" top="8" />
+                </padding>
+            </Label>
+        </HBox>
+
+        <Label fx:id="messageLabel" alignment="TOP_LEFT" maxWidth="400" prefHeight="50" minWidth="300" text="Message Label" styleClass="message-dialog">
+            <padding>
+                <Insets bottom="8" left="8" right="8" top="8" />
+            </padding>
+        </Label>
+
+        <VBox fx:id="contentView"></VBox>
+
+        <HBox>
+            <padding>
+                <Insets bottom="8" left="8" right="8" top="8" />
+            </padding>
+
+            <HBox alignment="BASELINE_LEFT"  spacing="8" HBox.hgrow="NEVER">
+                <JFXButton fx:id="naturalButton" styleClass="button-dialog" text="Natural">
+                </JFXButton>
+            </HBox>
+
+            <HBox alignment="BASELINE_RIGHT" spacing="8" HBox.hgrow="ALWAYS">
+                <JFXButton fx:id="negativeButton" styleClass="button-dialog" text="Negative">
+                </JFXButton>
+                <JFXButton fx:id="positiveButton" styleClass="button-dialog" text="Positive">
+                </JFXButton>
+            </HBox>
+        </HBox>
+    </VBox>
+</fx:root>

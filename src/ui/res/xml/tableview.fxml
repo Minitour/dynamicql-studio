@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<fx:root stylesheets="@../css/styles.css" type="javafx.scene.layout.StackPane" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <!--<padding><Insets top="8" left="8" right="8" bottom="8"/></padding>-->
+    <AnchorPane fx:id="pane">
+        <TableView fx:id="tableView"
+                   AnchorPane.leftAnchor="0.0"
+                   AnchorPane.topAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0"
+                   AnchorPane.bottomAnchor="0.0"/>
+
+
+        <HBox fx:id="toolbar"
+              spacing="10"
+               AnchorPane.rightAnchor="16.0"
+               AnchorPane.bottomAnchor="16.0"
+               alignment="CENTER">
+
+        </HBox>
+    </AnchorPane>
+</fx:root>

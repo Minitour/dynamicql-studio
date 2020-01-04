@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.*?>
+<?import ui.UIView?>
+<UIView fx:id="root" prefHeight="400" prefWidth="600"
+        stylesheets="@../../../../../ui/res/css/styles.css,@../css/style.css, @../css/keywords.css"
+        xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane>
+
+        <AnchorPane prefHeight="${root.height}" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0"
+                    AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+            <SplitPane fx:id="splitPane" dividerPositions="0.8" prefWidth="200.0"
+                       style="-fx-box-border: transparent; -fx-background-color: transparent;"
+                       AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                       AnchorPane.topAnchor="0">
+                <items>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" >
+                        <AnchorPane fx:id="leftMenu"
+                                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="44.0"/>
+                    </AnchorPane>
+                    <AnchorPane>
+                        <AnchorPane fx:id="rightMenu"
+                                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="44.0"/>
+                    </AnchorPane>
+
+                </items>
+            </SplitPane>
+        </AnchorPane>
+        <HBox fx:id="navBar" prefHeight="44" spacing="8" styleClass="navbar" AnchorPane.leftAnchor="0"
+              AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+            <padding>
+                <Insets bottom="8" left="16" right="16" top="8"/>
+            </padding>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="welcomeLabel" text="DynamicQL Studio">
+
+                </Label>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" spacing="8" HBox.hgrow="ALWAYS">
+
+                <JFXButton fx:id="export" mnemonicParsing="false" styleClass="button-nav" text="Export"/>
+            </HBox>
+
+        </HBox>
+    </AnchorPane>
+</UIView>
