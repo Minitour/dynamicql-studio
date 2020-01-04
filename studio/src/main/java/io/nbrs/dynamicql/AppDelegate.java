@@ -28,6 +28,6 @@ public class AppDelegate extends Application {
     }
 
     public static void main(String... args) {
-        Application.launch(args);
+        AppDelegate.launch(args);
     }
 }

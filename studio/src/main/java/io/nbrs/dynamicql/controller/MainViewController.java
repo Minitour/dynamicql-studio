@@ -378,7 +378,7 @@ public class MainViewController extends UIViewController {
 
         @Override
         public String resource() {
-            return "/io/nbrs/dynamicql/view/xml/list_item.fxml";
+            return "/view/xml/list_item.fxml";
         }
     }
 }
