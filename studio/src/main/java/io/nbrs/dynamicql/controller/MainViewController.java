@@ -201,13 +201,14 @@ public class MainViewController extends UIViewController {
                 .multiPlainChanges()
 
                 // do not emit an event until 500 ms have passed since the last emission of previous stream
-                .successionEnds(Duration.ofMillis(500))
+                .successionEnds(Duration.ofMillis(1))
 
                 // run the following code block when previous stream emits an event
                 .subscribe(ignore -> {
                     String text = codeArea.getText();
                     codeArea.setStyleSpans(0, computeHighlighting(text));
                     computeParameters(text);
+                    updateTextIfNeeded(text);
                 });
 
         // when no longer need syntax highlighting and wish to clean up memory leaks
@@ -289,6 +290,15 @@ public class MainViewController extends UIViewController {
                     .collect(Collectors.toList());
             listView.setItems(FXCollections.observableArrayList(menuItems));
         }
+    }
+
+    private void updateTextIfNeeded(String text) {
+        if (!text.contains("?")) {
+            return;
+        }
+
+        text = text.replaceAll(Pattern.quote("?"), "\\${}");
+        this.codeArea.replaceText(text);
     }
 
     protected void setViewOn(AnchorPane pane, Node view) {
